@@ -1,11 +1,20 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package herencia;
+
+/**
+ * @author  Marfran Buitrago
+ * @author  Francisco Caceres
+ */
 
 public class Libro extends Obra{
     private String editorial;
     private int nPaginas;
     private int año;
 
-	Libro(String titulo, String artista, String editorial, int nPaginas, int año) {
+public Libro(String titulo, String artista, String editorial, int nPaginas, int año) {
             super(titulo, artista, año);
                 this.editorial = editorial;
                 this.nPaginas = nPaginas;
@@ -36,5 +45,9 @@ public class Libro extends Obra{
     public void setAño(int año) {
         this.año = año;
     }
-
+    
+    public void imprimir()
+    {
+ 
+    }
 }

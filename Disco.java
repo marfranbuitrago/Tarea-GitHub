@@ -5,14 +5,14 @@
 package herencia;
 
 /**
- *
+ * @author  Marfran Buitrago
  * @author  Francisco Caceres
  */
 public class Disco extends Obra{
     private String discografia;
-	private int nCanciones;
+    private int nCanciones;
 
-	Disco(String titulo, String artista, String discografia, int nCanciones) {
+public Disco(String titulo, String artista, String discografia, int nCanciones) {
             super(titulo, artista, nCanciones);
           	this.discografia = discografia;
 		this.nCanciones = nCanciones;
@@ -34,4 +34,12 @@ public class Disco extends Obra{
         this.nCanciones = nCanciones;
     }
 
+    public void imprimir()
+{
+        System.out.println(" Titulo "+this.getTitulo());
+        System.out.println(" Autor "+this.getArtista());
+        System.out.println(" Año de Edicion "+this.getAñoEdicion());   
+        System.out.println(" Discografia "+discografia);
+        System.out.println(" Nro Canciones "+nCanciones);
+}   
 }
