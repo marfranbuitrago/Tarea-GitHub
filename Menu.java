@@ -73,14 +73,69 @@ public class Menu {
 						}
 					}while(op2<3); 
 					break;
-                             ///continuar con los casos
+                             case 3: 
+				int op3; 
+                                op3 = 0;
+				do{
+						System.out.println("\n\t1.- Crear Pelicula"); 
+						System.out.println("\n\t2.- Salir"); 
+						op3= scan.nextInt(); 
+						switch(op3){
+							case 1: 
+                                                            System.out.println("\nIngrese el Nombre de la Pelicula:");
+                                                            System.out.println("\nIngrese el Nombre de la Productora:");
+                                                            System.out.println("\nIngrese el Año de Estreno:");
+                                                        break; 
+							default: System.out.println("Saliendo...");
+                                                        break; 
+						}
+				}while(op3<2); 
+				break;
+                                case 4: 
+				int op4; 
+                                op4 = 0;
+				do{
+						System.out.println("\nReportes"); 
+						System.out.println("\n\t1.- Listado de Obras"); 
+                                                System.out.println("\n\t2.- Listado de Peliculas");
+                                                System.out.println("\n\t3.- Buscar");
+                                                System.out.println("\n\t4.- Salir");
+                                                op4= scan.nextInt(); 
+						switch(op4){
+							case 3: 
+                                                            System.out.println("\n\t1.-Buscar Obras de un Autor");
+                                                            System.out.println("\n\t2.-Buscar Peliculas de un Autor:");
+                                                            System.out.println("\n\t3.- Salir:");
+                                                                op4= scan.nextInt(); 
+                                                                 switch(op4){
+                                                                case 1: 
+                                                                    System.out.println("\nObras del Autor:");
+                                                                    System.out.println("\n\t1.-Ingrese el mombre del Autor:");
+                                                                    System.out.println("\n\t3.- Salir:");
+                                                                case 2: 
+                                                                    System.out.println("\nPeliculas del Autor:");
+                                                                    System.out.println("\n\t1.-Ingrese el mombre del Autor:");
+                                                                    System.out.println("\n\t3.- Salir:");
+                                                                break; 
+                                                                default: System.out.println("Saliendo...");
+                                                                break; 
+                                                                            }
+                                                        break; 
+							default: System.out.println("Saliendo...");
+                                                        break; 
+                                                             }       
+				}while(op4<4); 
+				break;
+                        }
+		}while(op <5); 
+                     
 }
- //   private Menu(InputStream in) {
-   //     throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    //}
+   private Menu(InputStream in) {
+     throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
-   // private int nextInt() {
-     //   throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-   // }
+    private int nextInt() {
+       throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
 }
