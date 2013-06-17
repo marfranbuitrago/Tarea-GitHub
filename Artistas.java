@@ -19,8 +19,8 @@ public Artistas(String nombres, int añoNacimiento) {
         
     }
 
-    Artitas() {
-        throw new UnsupportdOperationException ("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    Artistas() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public String getNombres() {
@@ -38,9 +38,10 @@ public Artistas(String nombres, int añoNacimiento) {
     public void setAñoNacimiento(int añoNacimiento) {
         this.añoNacimiento = añoNacimiento;
     }
-
+    
     public void imprimir()
-    {
+  {
  
-    }
+  }
+ 
 }

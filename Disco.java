@@ -18,6 +18,18 @@ public Disco(String titulo, String artista, String discografia, int nCanciones) 
 		this.nCanciones = nCanciones;
 	}
 
+    /**
+     *
+     * @param discograf
+     * @param AutorO
+     * @param ncanc
+     * @param Titulo
+     * @param añoA
+     */
+    public Disco(String discograf, String AutorO, int ncanc, String Titulo, int añoA) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public String getDiscografia() {
         return discografia;
     }

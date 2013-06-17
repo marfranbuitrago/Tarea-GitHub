@@ -21,6 +21,18 @@ public class Pelicula extends Obra {
             this.añoEstreno = añoEstreno;
             }
 
+    /**
+     *
+     * @param Titulo
+     * @param AutorP
+     * @param añoP
+     * @param productor
+     * @param inter
+     */
+    public Pelicula(String Titulo, String AutorP, int añoP, String productor, Artistas[] inter) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public Artistas[] getInterpretes(){
         return interpretes;
     }
