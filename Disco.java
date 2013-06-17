@@ -37,7 +37,7 @@ public Disco(String titulo, String artista, String discografia, int nCanciones) 
     public void imprimir()
 {
         System.out.println(" Titulo "+this.getTitulo());
-        System.out.println(" Autor "+this.getArtista());
+        System.out.println(" Autor "+this.getAutor());
         System.out.println(" Año de Edicion "+this.getAñoEdicion());   
         System.out.println(" Discografia "+discografia);
         System.out.println(" Nro Canciones "+nCanciones);

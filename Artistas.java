@@ -19,6 +19,10 @@ public Artistas(String nombres, int añoNacimiento) {
         
     }
 
+    Artitas() {
+        throw new UnsupportdOperationException ("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public String getNombres() {
         return nombres;
     }
