@@ -5,27 +5,21 @@
 package herencia;
 
 /**
- *
+ * @author Francisco Caceres
  * @author Marfran Buitrago
  */
 public class Obra {
     private String titulo;
-    private String artista;
+    private Artistas autor = new Artistas();
     private int añoEdicion;
 
-	Obra(String titulo, String artista, int añoEdicion) {
+public Obra(String titulo, String autor, int añoEdicion) {
 		this.titulo = titulo;
-		this.artista = artista;
+		this.autor.setNombres(autor);
 		this.añoEdicion = añoEdicion;
 	}
     
-     /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-
+    
     public String getTitulo() {
         return titulo;
     }
@@ -34,12 +28,12 @@ public class Obra {
         this.titulo = titulo;
     }
 
-    public String getArtista() {
-        return artista;
+    public String getAutor() {
+        return autor.getNombres();
     }
 
-    public void setArtista(String artista) {
-        this.artista = artista;
+    public void setAutor(String autor) {
+        this.autor.setNombres(autor);
     }
 
     public int getAñoEdicion() {
@@ -48,5 +42,10 @@ public class Obra {
 
     public void setAñoEdicion(int añoEdicion) {
         this.añoEdicion = añoEdicion;
+    }
+
+    public void imprimir()
+    {
+ 
     }
 }
